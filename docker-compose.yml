@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  storybook-sandbox:
+    container_name: storybook-sandbox
+    build: ./storybook-sandbox/
+    ports:
+      - '6006:6006'
+  passport_app:
+    container_name: 'passport_app'
+    build: ./passport_app/
+    ports:
+      - '3000:3000'
